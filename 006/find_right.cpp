@@ -5,17 +5,17 @@
 using std::cout;
 using std::vector;
 
-const int n = 100;   // çº¦å®šæ•°ç»„å¤§å°èŒƒå›´
-const int v = 1000;  // çº¦å®šæ•°ç»„å…ƒç´ èŒƒå›´
+const int n = 100;   // Ô¼¶¨Êı×é´óĞ¡·¶Î§
+const int v = 1000;  // Ô¼¶¨Êı×éÔªËØ·¶Î§
 
-std::random_device seed;  // ç¡¬ä»¶ç”Ÿæˆéšæœºæ•°ç§å­
+std::random_device seed;  // Ó²¼şÉú³ÉËæ»úÊıÖÖ×Ó
 std::default_random_engine engine(seed());
 std::uniform_int_distribution<int> distribution(0, v);
 
-// éšæœºæ„å»ºä¸€ä¸ªå…·æœ‰nä¸ªå…ƒç´ çš„vector
+// Ëæ»ú¹¹½¨Ò»¸ö¾ßÓĞn¸öÔªËØµÄvector
 vector<int> randomVector(int n);
 
-// æ±‚æœ‰åºæ•°ç»„ä¸­ <= num çš„æœ€å³è¾¹çš„ä½ç½®
+// ÇóÓĞĞòÊı×éÖĞ <= num µÄ×îÓÒ±ßµÄÎ»ÖÃ
 int find_right(vector<int>& sortedVecotr, int num);
 
 int right(vector<int>& v, int num);
@@ -43,7 +43,7 @@ vector<int> randomVector(int n) {
   return vec;
 }
 
-// æ±‚æœ‰åºæ•°ç»„ä¸­ <= num çš„æœ€å³è¾¹çš„ä½ç½®
+// ÇóÓĞĞòÊı×éÖĞ <= num µÄ×îÓÒ±ßµÄÎ»ÖÃ
 int find_right(vector<int>& sortedVecotr, int num) {
   int l = 0, r = sortedVecotr.size() - 1, m = 0, ans = -1;
   while (l <= r) {

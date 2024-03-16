@@ -1,8 +1,8 @@
 #include <iostream>
 
-// æŒ‰å€¼ä¼ é€’ã€æŒ‰å¼•ç”¨ä¼ é€’
-// ä»å †æ ˆè§’åº¦è§£é‡Šé“¾è¡¨èŠ‚ç‚¹
-// ä»¥å †æ ˆè§†è§’æ¥çœ‹é“¾è¡¨åè½¬
+// °´Öµ´«µİ¡¢°´ÒıÓÃ´«µİ
+// ´Ó¶ÑÕ»½Ç¶È½âÊÍÁ´±í½Úµã
+// ÒÔ¶ÑÕ»ÊÓ½ÇÀ´¿´Á´±í·´×ª
 
 #define println(x) std::cout << x << '\n'
 
@@ -26,15 +26,15 @@ int main() {
   f(a);
   println(a);
 
-  // è‹¥æ˜¯æƒ³åœ¨g1å®ç°æŠŠmainä¸­çš„bæŒ‡å‘nullptr
-  // g1çš„å½¢å‚éœ€è¦æ”¹ä¸º Number* &
+  // ÈôÊÇÏëÔÚg1ÊµÏÖ°ÑmainÖĞµÄbÖ¸Ïònullptr
+  // g1µÄĞÎ²ÎĞèÒª¸ÄÎª Number* &
   Number* b = new Number(5);
   g1(b);
   println(b->val);
   g2(b);
   println(b->val);
 
-  // æ¯”å¦‚ä¸‹é¢çš„ä¸€ç»´æ•°ç»„
+  // ±ÈÈçÏÂÃæµÄÒ»Î¬Êı×é
   int c[] = {1, 2, 3, 4};
   g3(c);
   println(c[0]);
@@ -42,7 +42,7 @@ int main() {
   println(c[0]);
 }
 
-// å•é“¾è¡¨èŠ‚ç‚¹
+// µ¥Á´±í½Úµã
 class ListNode {
  public:
   ListNode(int val) { this->val = val; }
@@ -57,7 +57,7 @@ class ListNode {
   ListNode* next;
 };
 
-// åè½¬å•é“¾è¡¨æµ‹è¯•é“¾æ¥ : https://leetcode.cn/problems/reverse-linked-list/
+// ·´×ªµ¥Á´±í²âÊÔÁ´½Ó : https://leetcode.cn/problems/reverse-linked-list/
 class Solution {
  public:
   ListNode* reverseList(ListNode* head) {
@@ -74,7 +74,7 @@ class Solution {
   }
 };
 
-// åŒé“¾è¡¨èŠ‚ç‚¹
+// Ë«Á´±í½Úµã
 class DoubleListNode {
  public:
   DoubleListNode(int v) { value = v; }
@@ -85,9 +85,9 @@ class DoubleListNode {
   int value;
 };
 
-// åè½¬åŒé“¾è¡¨
-// æ²¡æœ‰æ‰¾åˆ°æµ‹è¯•é“¾æ¥
-// å¦‚ä¸‹æ–¹æ³•æ˜¯å¯¹çš„
+// ·´×ªË«Á´±í
+// Ã»ÓĞÕÒµ½²âÊÔÁ´½Ó
+// ÈçÏÂ·½·¨ÊÇ¶ÔµÄ
 DoubleListNode* reverseDoubleList(DoubleListNode* head) {
   DoubleListNode* pre = nullptr;
   DoubleListNode* next = nullptr;

@@ -1,4 +1,4 @@
-// Е┼⌡Ф┴ёИ⌠╬Ф▌╔ https://leetcode.cn/problems/find-peak-element/
+// а╕©ша╢╫с https://leetcode.cn/problems/find-peak-element/
 
 #include <iostream>
 #include <vector>

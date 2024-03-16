@@ -1,16 +1,16 @@
 /*
- * 不要用代码结构来判断时间复杂度，比如只有一个while循环的冒泡排序，其实时间复杂度O(N^2)
+ * ��Ҫ�ô���ṹ���ж�ʱ�临�Ӷȣ�����ֻ��һ��whileѭ����ð��������ʵʱ�临�Ӷ�O(N^2)
 
- * 不要用代码结构来判断时间复杂度，比如 : N / 1 + N / 2 + N / 3 + ... +
-    N / N，这个流程的时间复杂度是O(N*logN)，著名的调和级数
+ * ��Ҫ�ô���ṹ���ж�ʱ�临�Ӷȣ����� : N / 1 + N / 2 + N / 3 + ... +
+    N / N��������̵�ʱ�临�Ӷ���O(N*logN)�������ĵ��ͼ���
 
- * 时间复杂度只能是对算法流程充分理解才能分析出来，而不是简单的看代码结构!
-    这是一个常见的错误!甚至有些算法的实现用了多层循环嵌套，但时间复杂度是O(N)的。
+ * ʱ�临�Ӷ�ֻ���Ƕ��㷨���̳��������ܷ��������������Ǽ򵥵Ŀ�����ṹ!
+    ����һ�������Ĵ���!������Щ�㷨��ʵ�����˶��ѭ��Ƕ�ף���ʱ�临�Ӷ���O(N)�ġ�
 
- * 常见复杂度一览 :
+ * �������Ӷ�һ�� :
     0(1) 0(logN) 0(N) O(N*logN) 0(N^2) ... O(N^k) 0(2^N) ... O(k^N) O(N!)
 
- * 时间复杂度非常重要，可以直接判断某个方法能不能通过一个题目，根据数据量猜解法。
+ * ʱ�临�Ӷȷǳ���Ҫ������ֱ���ж�ĳ�������ܲ���ͨ��һ����Ŀ�������������½ⷨ��
 */
 
 #include <algorithm>
@@ -21,8 +21,8 @@ using std::cout;
 using std::endl;
 using std::vector;
 
-// 只用一个循环完成冒泡排序
-// 但这是时间复杂度O(N^2)的！
+// ֻ��һ��ѭ�����ð������
+// ������ʱ�临�Ӷ�O(N^2)�ģ�
 
 template <typename T>
 void bubbleSort(vector<T>& arr) {
@@ -45,9 +45,9 @@ void bubbleSort(vector<T>& arr) {
 }
 
 int main() {
-  // 随机生成长度为n
-  // 值在0~v-1之间
-  // 且任意相邻两数不相等的数组
+  // ������ɳ���Ϊn
+  // ֵ��0~v-1֮��
+  // ������������������ȵ�����
   int n = 10;
   int v = 4;
   vector<int> arr1(n);
@@ -81,10 +81,10 @@ int main() {
   auto start{std::chrono::steady_clock::now()};
   for (int i = 1; i <= N; i++) {
     for (int j = i; j <= N; j += i) {
-      // 这两个嵌套for循环的流程，时间复杂度为O(N * logN)
-      // 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + ... + 1/n，也叫"调和级数"，收敛于O(logN)
-      // 所以如果一个流程的表达式 : n/1 + n/2 + n/3 + ... + n/n
-      // 那么这个流程时间复杂度O(N * logN)
+      // ������Ƕ��forѭ�������̣�ʱ�临�Ӷ�ΪO(N * logN)
+      // 1/1 + 1/2 + 1/3 + 1/4 + 1/5 + ... + 1/n��Ҳ��"���ͼ���"��������O(logN)
+      // �������һ�����̵ı���ʽ : n/1 + n/2 + n/3 + ... + n/n
+      // ��ô�������ʱ�临�Ӷ�O(N * logN)
     }
   }
   auto end{std::chrono::steady_clock::now()};
@@ -95,8 +95,8 @@ int main() {
   start = std::chrono::steady_clock::now();
   for (int i = 1; i <= N; i++) {
     for (int j = i; j <= N; j++) {
-      // 这两个嵌套for循环的流程，时间复杂度为O(N^2)
-      // 很明显等差数列
+      // ������Ƕ��forѭ�������̣�ʱ�临�Ӷ�ΪO(N^2)
+      // �����ԵȲ�����
     }
   }
   end = std::chrono::steady_clock::now();
