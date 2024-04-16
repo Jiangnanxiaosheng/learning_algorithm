@@ -51,11 +51,11 @@ void f(TreeNode* head) {
   if (head == nullptr) {
     return;
   }
-  // 1
+  // 1  第一次来到head节点
   f(head->left);
-  // 2
+  // 2  第二次来到head节点
   f(head->right);
-  // 3
+  // 3  第三次来到head节点
 }
 
 // 先序打印所有节点，递归版
