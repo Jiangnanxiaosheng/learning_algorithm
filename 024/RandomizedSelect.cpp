@@ -1,3 +1,7 @@
+/*
+ * 利用改写快排的方法，时间复杂度为O(n), 额外空间复杂度O(1)
+ */
+
 #include <algorithm>
 #include <vector>
 using namespace std;
