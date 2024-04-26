@@ -1,0 +1,10 @@
+  Student s1(17, "张三");
+  //   Student s2(17, "张三");
+  //   std::unordered_map<Student, std::string> map3;
+  //   map3[s1] = "这是张三";
+  //   std::cout << (map3.find(s1) != map3.end()) << std::endl;
+  //   std::cout << (map3.count(s2) ? 1 : 0) << std::endl;
+  //   map3[s2] = "这是另一个张三";
+  //   std::cout << map3.size() << std::endl;
+  //   std::cout << map3[s1] << std::endl;
+  //   std::cout << map3[s2] << std::endl;
